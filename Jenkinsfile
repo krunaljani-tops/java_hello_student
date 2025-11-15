@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/java_hello_student1.git'
+                git branch: 'main', url: 'https://github.com/krunaljani-tops/java_hello_student1.git'
             }
         }
         stage('Build JAR') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'sudo docker build -t java_hello_student1_img .'
+                sh 'sudo docker build -t java_hello_student .'
             }
         }
         stage('Deploy with Docker Compose') {
