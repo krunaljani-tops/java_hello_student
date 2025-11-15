@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/krunaljani-tops/java_hello_student1.git'
+                git branch: 'main', url: 'https://github.com/krunaljani-tops/java_hello_student.git'
             }
         }
         stage('Build JAR') {
