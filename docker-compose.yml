@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  student1-app:
+    build: .
+    container_name: student1_app
+    ports:
+      - "8081:8081"
