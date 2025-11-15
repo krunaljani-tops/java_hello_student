@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/krunaljani-tops/java_hello_student.git'
-            }
-        }
         stage('Build JAR') {
             steps {
                 sh 'mvn clean package -DskipTests'
