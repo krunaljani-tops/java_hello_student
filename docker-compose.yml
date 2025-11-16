@@ -2,6 +2,6 @@ version: "3.8"
 services:
   student1-app:
     build: .
-    container_name: ecstatic_keldysh
+    container_name: goofy_fermat
     ports:
       - "8081:8081"
