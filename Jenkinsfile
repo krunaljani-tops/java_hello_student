@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                sh 'docker compose down || true'
+                sh 'docker down || true'
                 sh 'docker up -d --build'
             }
         }
