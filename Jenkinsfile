@@ -16,9 +16,9 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                // sh 'docker down || true'
-                // sh 'docker up -d --build'
-                sh 'docker run -d -p 8081:8081 java_hello_student'
+                 sh 'docker compose down || true'
+                 sh 'docker compose up -d --build'
+                //sh 'docker run -d -p 8081:8081 java_hello_student'
             }
         }
     }
