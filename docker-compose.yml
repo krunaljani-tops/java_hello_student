@@ -1,7 +1,17 @@
 version: "3.8"
+# services:
+#   student1-app:
+#     build: .
+#     container_name: goofy_fermat
+#     ports:
+#       - "8081:8081"
 services:
-  student1-app:
-    build: .
-    container_name: goofy_fermat
+  java_hello_student:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: java_hello_student:latest
+    container_name: student1_docker_compose
     ports:
       - "8081:8081"
+    restart: always
