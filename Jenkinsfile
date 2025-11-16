@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'sudo docker build -t java_hello_student .'
+                sh 'sudo docker build -t java_hello_student:latest .'
             }
         }
         stage('Deploy with Docker Compose') {
