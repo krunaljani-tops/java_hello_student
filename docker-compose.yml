@@ -10,7 +10,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: java_hello_student:latest
+    image: java_hello_student
     container_name: student1_docker_compose
     ports:
       - "8081:8081"
